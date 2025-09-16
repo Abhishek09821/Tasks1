@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Mega</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-wrapper">
+    <header>
+      <h1>🎉 Quiz Mega 🎉</h1>
+      <p>Learn languages and tech while having fun!</p>
+    </header>
+
+    <div class="quiz-container">
+      <!-- Start Screen -->
+      <div id="start-screen" class="screen active">
+        <h2>Welcome to the Quiz!</h2>
+        <button id="start-btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz-screen" class="screen">
+        <div id="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+
+        <!-- Circular Timer -->
+        <div class="timer-circle">
+          <svg>
+            <circle cx="30" cy="30" r="28"></circle>
+            <circle id="time-circle" cx="30" cy="30" r="28" class="safe"></circle>
+          </svg>
+          <span id="time">15</span>
+        </div>
+
+        <h2 id="question"></h2>
+        <ul id="options"></ul>
+        <div class="navigation">
+          <button id="prev-btn" style="display:none;">⬅ Previous</button>
+          <button id="next-btn">Next ➡</button>
+        </div>
+      </div>
+
+      <!-- Result Screen -->
+      <div id="result-screen" class="screen">
+        <h2>Your Score: <span id="score"></span></h2>
+        <p id="feedback"></p>
+        <button id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 All Rights Reserved | Made with ❤️ by Abhishek Tiwari</p>
+    </footer>
+  </div>
+
+  <!-- JS link -->
+  <script src="script.js"></script>
+</body>
+</html>
+
